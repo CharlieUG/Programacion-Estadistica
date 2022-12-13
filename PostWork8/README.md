@@ -31,6 +31,7 @@ La base de datos contiene las siguientes variables:
 ```R
 df <- read.csv("https://raw.githubusercontent.com/beduExpert/Programacion-R-Santander-2022/main/Sesion-08/Postwork/inseguridad_alimentaria_bedu.csv")
 ```
+- [inseguridad_alimentaria_bedu.csv](inseguridad_alimentaria_bedu.csv)
 
 1) Plantear el problema del caso
 2) Realizar un análisis descriptivo de la información
@@ -42,4 +43,4 @@ df <- read.csv("https://raw.githubusercontent.com/beduExpert/Programacion-R-Sant
 NOTA: Todo el planteamiento deberá estár correctamente desarrollado y se deberá analizar e interpretar todos los resultados para poder dar una conclusión final al problema planteado.
 
 #### Ir al archivo de código fuente
-- [PostWork 8](src/PostWork8.R)
+- [PostWork 8](https://github.com/alsolisc/Postworks/tree/main/src/PostWork8.R)

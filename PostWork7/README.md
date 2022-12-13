@@ -10,6 +10,7 @@ Utilizando el siguiente vector numérico, realiza lo que se indica:
 url = "https://raw.githubusercontent.com/beduExpert/Programacion-R-Santander-2022/main/Sesion-07/Data/global.txt"
 Global <- scan(url, sep="")
 ```
+- [global.txt](/global.txt)
 
 1) Crear una objeto de serie de tiempo con los datos de Global. La serie debe ser mensual 
 comenzado en Enero de 1856
@@ -31,4 +32,4 @@ predicción de 12 periodos (meses).
 
 
 #### Ir al archivo de código fuente
-- [PostWork 7](src/PostWork7.R)
+- [PostWork 7](https://github.com/alsolisc/Postworks/tree/main/src/PostWork7.R)

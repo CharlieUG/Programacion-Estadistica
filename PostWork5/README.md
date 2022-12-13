@@ -31,4 +31,4 @@ Utilizar 99% de confianza para toda las pruebas, en cada caso realiza el plantea
 de hipótesis adecuado y concluye.
 
 #### Ir al archivo de código fuente
-- [PostWork 5](src/PostWork5.R)
+- [PostWork 5](https://github.com/alsolisc/Postworks/tree/main/src/PostWork5.R)

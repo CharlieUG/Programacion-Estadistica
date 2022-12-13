@@ -14,8 +14,9 @@
 
 Utilizando el dataframe `boxp.csv` realizar el siguiente análisis descriptivo. No olvidar excluir los missing values y transformar las variables a su
 tipo y escala correspondiente.
+- [boxp.csv](/boxp.csv)
 
-"1) Calcular e interpreta las medidas de tendencia central de la variable `Mediciones`
+1) Calcular e interpreta las medidas de tendencia central de la variable `Mediciones`
 
 2) Con base al resultado anteior, ¿qué se puede concluir respecto al sesgo de `Mediciones`?
 
@@ -29,4 +30,4 @@ y por `Grupo` dentro de cada categoría. ¿Se considera que hay diferencias entr
 podrían estar generando el sesgo?
  
 #### Ir al archivo de código fuente
-- [PostWork 3](src/PostWork3.R)
+- [PostWork 3](https://github.com/alsolisc/Postworks/tree/main/src/PostWork3.R)

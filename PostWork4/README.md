@@ -12,8 +12,10 @@
 #### Desarrollo
 
 Utilizando la variable `total_intl_charge` de la base de datos `telecom_service.csv` de la sesión 3, realizar un análisis probabilístico. 
-Para ello, se debe determinar la función de distribución de probabilidad que más se acerque el comportamiento de los datos.
 
+- [telecom_service.csv](/telecom_service.csv)
+
+Para ello, se debe determinar la función de distribución de probabilidad que más se acerque el comportamiento de los datos.
 
 Una vez seleccionado el modelo, realizar lo siguiente:
 
@@ -31,4 +33,4 @@ Una vez seleccionado el modelo, realizar lo siguiente:
 
  
 #### Ir al archivo de código fuente
-- [PostWork 4](src/PostWork4.R)
+- [PostWork 4](https://github.com/alsolisc/Postworks/tree/main/src/PostWork4.R)

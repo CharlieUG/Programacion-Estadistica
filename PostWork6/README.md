@@ -31,6 +31,7 @@ ventas sobre la base de los tres presupuestos de medios de comunicación. Ajusta
 modelos de regresión lineal múltiple a los datos advertisement.csv y elegir el 
 modelo más adecuado siguiendo los procedimientos vistos
 
+
 Considerar:
 
 - Y: Sales (Ventas de un producto)
@@ -41,6 +42,7 @@ Considerar:
 ```R
 adv <- read.csv("https://raw.githubusercontent.com/beduExpert/Programacion-R-Santander-2022/main/Sesion-06/data/advertising.csv")
 ```
+- [advertising.csv](/advertising.csv)
 
 #### Ir al archivo de código fuente
-- [PostWork 6](src/PostWork6.R)
+- [PostWork 6](https://github.com/alsolisc/Postworks/tree/main/src/PostWork6.R)
