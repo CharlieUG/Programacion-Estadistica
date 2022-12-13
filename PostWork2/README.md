@@ -23,4 +23,4 @@ que los datos se encuentran listos para usarse.
 
  
 #### Ir al archivo de código fuente
-- [PostWork 1](src/PostWork2.R)
+- [PostWork 2](src/PostWork2.R)
