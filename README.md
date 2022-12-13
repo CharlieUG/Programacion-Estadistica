@@ -27,7 +27,7 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 ## Acerca de los colaboradores ℹ️
 - [Alfredo Castillo](https://github.com/alsolisc)
-- [Angélica Martínez]
+- [Angélica Martínez](https://github.com/AngelicaMarMo)
 - [José Carlos Velázquez]
 - [Nestor Gaspar]
 - [Juan Dzul]
