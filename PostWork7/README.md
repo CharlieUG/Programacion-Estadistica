@@ -105,8 +105,7 @@ arima3
 # sigma^2 estimated as 0.01619:  log likelihood = 1155.77,  aic = -2301.53
 ```
 
-#### 7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 3
-### tiene el menor AIC (-2301.53). En seguida, se realizará el ajuste del modelo:
+#### 7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 3 tiene el menor AIC (-2301.53). En seguida, se realizará el ajuste del modelo:
 ```r
 fit <- arima(Global.ts, order = c(3, 1, 1))
 fit
@@ -122,10 +121,12 @@ fit
 ```
 
 #### La ecuación del modelo es la siguiente:
+```
+ Δx^_t = 0.4403*Δx_t-1 + 0.1260*Δx_t-2 + 0.0492*Δx_t-3 - 0.9669*u_t-1"
+```
 
-#### Δx^_t = 0.4403*Δx_t-1 + 0.1260*Δx_t-2 + 0.0492*Δx_t-3 - 0.9669*u_t-1"
+#### 8. Finalmente se realizarán los pronósticos para el año 2006 y su respectivo gráfico:
 
-#### 8. Finalmente se realizarán los pronósticos para el año 2006 y su respectivo gráfico:"
 ```r
 pr <- predict(fit,12)$pred
 pr
