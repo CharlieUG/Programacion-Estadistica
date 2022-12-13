@@ -6,14 +6,14 @@
  <h2 align="center"><strong>Postworks del modulo "Programación y estadística con R Santander 2022" </h2>
 
 
-## Acerca del proyecto
+## Acerca del proyecto ⚠️
 Este repositorio fue creado para almacenar y presentar los `postworks` del modulo _"Programación y estadística con R Santander 2022"_ de la beca _"Becas Santander Tecnología | Data Science para profesionistas | BEDU"_.
 ***
 
-## Requerimientos
+## Requerimientos 📋
 * R, RStudio
 
-## Indíce
+## Indíce 📖
 
 - [PostWork 1](src/PostWork1)
 - [PostWork 2](src/PostWork2)
@@ -25,7 +25,7 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [PostWork 8](src/PostWork8)
 
 
-## Acerca de los colaboradores
+## Acerca de los colaboradores ℹ️
 - [Alfredo Castillo](https://github.com/alsolisc)
 - [Angélica Martínez]
 - [José Carlos Velázquez]
