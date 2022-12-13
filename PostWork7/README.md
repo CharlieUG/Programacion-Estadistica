@@ -22,7 +22,7 @@ primera diferencia.
 
 4) ¿Consideras que la serie es estacionaria en niveles o en primera diferencia?
 
-5) Con base en tu respuesta anterior, obten las funciones de autocorrelación y autocorrelación parcial?
+5) Con base en tu respuesta anterior, obten las funciones de autocorrelación y autocorrelación parcial:
 
 6) De acuerdo con lo observado en las gráficas anteriores, se sugiere un modelo ARIMA
 con AR(1), I(1) y MA desde 1 a 4 rezagos Estima los diferentes modelos ARIMA propuestos.
