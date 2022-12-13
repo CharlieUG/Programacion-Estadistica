@@ -2,7 +2,7 @@
 
 #### Objetivo
 
-El Postwork tiene como objetivo practica los comandos básicos aprendidos durante la sesión, de tal modo que sirvan para reafirmar el conocimiento. 
+El Postwork tiene como objetivo practicar los comandos básicos aprendidos durante la sesión, de tal modo que sirvan para reafirmar el conocimiento. 
 
 
 #### Requisitos
