@@ -16,6 +16,7 @@ El siguiente postwork, servirá para ir desarrollando habilidades como si se tra
 A continuación aparecen una serie de objetivos que se deben cumplir, es un ejemplo real de aplicación y tiene que ver con datos referentes a equipos de la liga española de fútbol (recuerda que los datos provienen siempre de diversas naturalezas), en este caso se cuenta con muchos datos que se pueden aprovechar, explotarlos y generar análisis interesantes que se pueden aplicar a otras áreas. Siendo así damos paso a las instrucciones: 
 
 1. Descargar los datos de soccer de la temporada 2019/2020 de la primera división de la liga española: https://www.football-data.co.uk/spainm.php
+<<<<<<< HEAD
 - [SP1.csv](/SP1.csv)
 ```r
 
@@ -24,6 +25,9 @@ install.packages("pheatmap")
 library(pheatmap)
 
 ```
+=======
+- [SP1.csv](SP1.csv)
+>>>>>>> 91f9d5ee751b6ea0a4b0897a45d9ed3468678aea
 3. Importar los datos a R como un Dataframe
 ```r
 
