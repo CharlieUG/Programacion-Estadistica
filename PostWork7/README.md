@@ -28,7 +28,7 @@ class(Global.ts)
 
 2) Realizar una gráfica de la serie de tiempo anterior de 2005
 
-### A continuación se realizará el gráfico de la serie de tiempo elaborada en el apartado anterior:
+#### A continuación se realizará el gráfico de la serie de tiempo elaborada en el apartado anterior:
 ```r
 plot(Global.ts, 
      main = "Serie de tiempo de los datos de Global", 
@@ -38,9 +38,7 @@ plot(Global.ts,
      col = "blue")
 grid()
 ```
-### Con base en los resultados obtenidos, puede concluirse que la serie no es estacionaria 
-### debido a que ésta no muestra un comportamiento estable a lo largo del tiempo, es decir 
-### su media y varianza no son constantes en el tiempo
+#### Con base en los resultados obtenidos, puede concluirse que la serie no es estacionaria debido a que ésta no muestra un comportamiento estable a lo largo del tiempo, es decir su media y varianza no son constantes en el tiempo
 
 3) Realizar una gráfica de la serie de tiempo anterior, transformando a la 
 primera diferencia.
@@ -56,9 +54,7 @@ grid()
 
 4) ¿Consideras que la serie es estacionaria en niveles o en primera diferencia?
 
-### Con base en los resultados obtenidos, puede concluirse que la serie es estacionaria en primera
-### diferencia debido a que ésta muestra un comportamiento estable a lo largo del tiempo, es decir, 
-### su media y varianza son constantes en el tiempo."
+#### Con base en los resultados obtenidos, puede concluirse que la serie es estacionaria en primera diferencia debido a que ésta muestra un comportamiento estable a lo largo del tiempo, es decir, su media y varianza son constantes en el tiempo.
 
 5) Con base en tu respuesta anterior, obten las funciones de autocorrelación y autocorrelación parcial:
 
@@ -67,14 +63,10 @@ acf(diff(Global.ts))
 pacf(diff(Global.ts))
 ```
 
-### 6. De acuerdo con el gráfico de la función de autocorrelación puede estimarse que el
-### modelo ARIMA a construir deberá contener entre 1 y 3 términos autorregresivos. 
-### Por otro lado, la gráfica de la función de autocorrelación parcial sugiere que el modelo
-### ARIMA es de orden 1 para la media móvil. Finalmente, el modelo ARIMA que se construirá 
-### tendrá un orden de integración-diferenciación de uno." 
+#### 6. De acuerdo con el gráfico de la función de autocorrelación puede estimarse que el modelo ARIMA a construir deberá contener entre 1 y 3 términos autorregresivos. 
+#### Por otro lado, la gráfica de la función de autocorrelación parcial sugiere que el modelo ARIMA es de orden 1 para la media móvil. Finalmente, el modelo ARIMA que se construirá  tendrá un orden de integración-diferenciación de uno.
+#### Por todo lo anterior, se construirán tres modelos ARIMA, y se seleccionará el mejorcon base en el criterio del AIC: 
 
-### Por todo lo anterior, se construirán tres modelos ARIMA, y se seleccionará el mejor
-### con base en el criterio del AIC: 
 ```r
 arima1 <- arima(Global.ts,order = c(1,1,1))
 arima1
@@ -113,7 +105,7 @@ arima3
 # sigma^2 estimated as 0.01619:  log likelihood = 1155.77,  aic = -2301.53
 ```
 
-### 7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 3
+#### 7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 3
 ### tiene el menor AIC (-2301.53). En seguida, se realizará el ajuste del modelo:
 ```r
 fit <- arima(Global.ts, order = c(3, 1, 1))
@@ -129,11 +121,11 @@ fit
 # sigma^2 estimated as 0.01619:  log likelihood = 1155.77,  aic = -2301.53
 ```
 
-# La ecuación del modelo es la siguiente:
+#### La ecuación del modelo es la siguiente:
 
-### Δx^_t = 0.4403*Δx_t-1 + 0.1260*Δx_t-2 + 0.0492*Δx_t-3 - 0.9669*u_t-1"
+#### Δx^_t = 0.4403*Δx_t-1 + 0.1260*Δx_t-2 + 0.0492*Δx_t-3 - 0.9669*u_t-1"
 
-### 8. Finalmente se realizarán los pronósticos para el año 2006 y su respectivo gráfico:"
+#### 8. Finalmente se realizarán los pronósticos para el año 2006 y su respectivo gráfico:"
 ```r
 pr <- predict(fit,12)$pred
 pr
