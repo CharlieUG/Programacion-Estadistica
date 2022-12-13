@@ -1,9 +1,7 @@
 # Postwork Sesión 1.
-
 #### Objetivo
 
 El Postwork tiene como objetivo practicar los comandos básicos aprendidos durante la sesión, de tal modo que sirvan para reafirmar el conocimiento. 
-
 
 #### Requisitos
 - Concluir los retos
@@ -16,7 +14,6 @@ El siguiente postwork, servirá para ir desarrollando habilidades como si se tra
 A continuación aparecen una serie de objetivos que se deben cumplir, es un ejemplo real de aplicación y tiene que ver con datos referentes a equipos de la liga española de fútbol (recuerda que los datos provienen siempre de diversas naturalezas), en este caso se cuenta con muchos datos que se pueden aprovechar, explotarlos y generar análisis interesantes que se pueden aplicar a otras áreas. Siendo así damos paso a las instrucciones: 
 
 1. Descargar los datos de soccer de la temporada 2019/2020 de la primera división de la liga española: https://www.football-data.co.uk/spainm.php
-<<<<<<< HEAD
 - [SP1.csv](/SP1.csv)
 ```r
 
@@ -25,10 +22,7 @@ install.packages("pheatmap")
 library(pheatmap)
 
 ```
-=======
-- [SP1.csv](SP1.csv)
->>>>>>> 91f9d5ee751b6ea0a4b0897a45d9ed3468678aea
-3. Importar los datos a R como un Dataframe
+2. Importar los datos a R como un Dataframe
 ```r
 
 sp1 <- read.csv("SP1.csv")
@@ -38,7 +32,7 @@ sp1
 
 ```
 
-2. Del dataframe que resulta de importar los datos a `R`, extraer las columnas que contienen los números de goles anotados por los equipos que jugaron en casa (FTHG) y los goles anotados por los equipos que jugaron como visitante (FTAG); guárdalos en vectores separados
+3. Del dataframe que resulta de importar los datos a `R`, extraer las columnas que contienen los números de goles anotados por los equipos que jugaron en casa (FTHG) y los goles anotados por los equipos que jugaron como visitante (FTAG); guárdalos en vectores separados
 ```r
 
 #Extracción de goles anotados en casa (FTHG):
@@ -50,7 +44,7 @@ golesvis <- sp1[,7]
 golesvis
 
 ```
-3. Consultar cómo funciona la función `table` en `R`. Para ello, es posible ingresar los comandos `help("table")` o `?table` para leer la documentación.
+4. Consultar cómo funciona la función `table` en `R`. Para ello, es posible ingresar los comandos `help("table")` o `?table` para leer la documentación.
 ```r
 #La función "Table" se utiliza para crear tablas de frecuencias de una vía. Los
 #parámetros a utilizar son los nombres de los objetos sobre los que se quiere
@@ -69,7 +63,7 @@ pheatmap(resultados, display_numbers = TRUE, number_color = "black",  show_rowna
 
 ```
  
-4. Responde a las siguientes preguntas:
+5. Responde a las siguientes preguntas:
 
 a) ¿Cuántos goles tuvo el partido con mayor empate?
 ```r
