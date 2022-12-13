@@ -15,14 +15,14 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 ## Indíce 📖
 
-- [PostWork 1](src/PostWork1)
-- [PostWork 2](src/PostWork2)
-- [PostWork 3](src/PostWork3)
-- [PostWork 4](src/PostWork4)
-- [PostWork 5](src/PostWork5)
-- [PostWork 6](src/PostWork6)
-- [PostWork 7](src/PostWork7)
-- [PostWork 8](src/PostWork8)
+- [PostWork 1](/PostWork1)
+- [PostWork 2](/PostWork2)
+- [PostWork 3](/PostWork3)
+- [PostWork 4](/PostWork4)
+- [PostWork 5](/PostWork5)
+- [PostWork 6](/PostWork6)
+- [PostWork 7](/PostWork7)
+- [PostWork 8](/PostWork8)
 
 
 ## Acerca de los colaboradores ℹ️
