@@ -1,9 +1,11 @@
 <p align="center">
   <img src="img/logo.png" alt="Logo" width="200" height="200">
 </p>
+<p align="center">  
 
-#Postworks del modulo "Programación y estadística con R Santander 2022"
-***
+ <h2 align="center"><strong>Postworks del modulo "Programación y estadística con R Santander 2022" </h2>
+
+
 ## Acerca del proyecto
 Este repositorio fue creado para almacenar y presentar los `postworks` del modulo _"Programación y estadística con R Santander 2022"_ de la beca _"Becas Santander Tecnología | Data Science para profesionistas | BEDU"_.
 ***
