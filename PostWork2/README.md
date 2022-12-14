@@ -25,13 +25,13 @@ iris
 plot(iris$Sepal.Length, iris$Sepal.Width, xlab="Lenght", ylab="Width") ##comparando el plot de rbase con el ggplot
 ```
 <p align="center">
-  <img src="img/pw2img1.png" alt="Logo" width="200" height="200">
+  <img src="img/pw2img1.png" alt="Logo" width="300" height="300">
 </p>
 ```R 
 ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width,color=Species, size=Petal.Width))+geom_point(shape=10, alpha=.5)+xlab("Sepal Lenght") +ggtitle("Relacion SepalLenght/Width separado por especies") + ylab("Sepal Width")
 ```
 <p align="center">
-  <img src="img/pw2img2.png" alt="Logo" width="200" height="200">
+  <img src="img/pw2img2.png" alt="Logo" width="300" height="300">
 </p>
 
 
@@ -49,7 +49,7 @@ iris_mean
   theme(plot.title = element_text(hjust = 0.5))
  ```
  <p align="center">
-  <img src="img/pw2img3.png" alt="Logo" width="200" height="200">
+  <img src="img/pw2img3.png" alt="Logo" width="300" height="300">
 </p>
 
 #### Ir al archivo de código fuente
