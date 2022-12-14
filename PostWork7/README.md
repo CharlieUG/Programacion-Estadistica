@@ -63,9 +63,9 @@ acf(diff(Global.ts))
 pacf(diff(Global.ts))
 ```
 
-#### 6. De acuerdo con el gráfico de la función de autocorrelación puede estimarse que el modelo ARIMA a construir deberá contener entre 1 y 3 términos autorregresivos. 
-#### Por otro lado, la gráfica de la función de autocorrelación parcial sugiere que el modelo ARIMA es de orden 1 para la media móvil. Finalmente, el modelo ARIMA que se construirá  tendrá un orden de integración-diferenciación de uno.
-#### Por todo lo anterior, se construirán tres modelos ARIMA, y se seleccionará el mejorcon base en el criterio del AIC: 
+#### 6. De acuerdo con el gráfico de la función de autocorrelación puede estimarse que el modelo ARIMA a construir deberá contener 1 término autorregresivo. 
+#### Por otro lado, la gráfica de la función de autocorrelación parcial sugiere que el modelo ARIMA debe utilizar entre 1 y 4 rezagos para el proceso de media móvil. Finalmente, el modelo ARIMA que se construirá tendrá un orden de integración-diferenciación de uno.
+#### Por todo lo anterior, se construirán cuatro modelos ARIMA, y se seleccionará el mejor con base en el criterio del AIC: 
 
 ```r
 arima1 <- arima(Global.ts,order = c(1,1,1))
@@ -74,55 +74,68 @@ arima1
 #   arima(x = Global.ts, order = c(1, 1, 1))
 # 
 # Coefficients:
-#         ar1      ma1
-#       0.3797  -0.8700
+#   ar1      ma1
+# 0.3797  -0.8700
 # s.e.  0.0433   0.0293
 # 
 # sigma^2 estimated as 0.01644:  log likelihood = 1142.13,  aic = -2278.26
 
-arima2 <- arima(Global.ts,order = c(2,1,1))
+arima2 <- arima(Global.ts,order = c(1,1,2))
 arima2
 # Call:
-#   arima(x = Global.ts, order = c(2, 1, 1))
+#   arima(x = Global.ts, order = c(1, 1, 2))
 # 
 # Coefficients:
-#         ar1     ar2      ma1
-#       0.4406  0.1417  -0.9608
-# s.e.  0.0262  0.0256   0.0107
+#   ar1      ma1     ma2
+# 0.7593  -1.2992  0.3190
+# s.e.  0.0354   0.0487  0.0452
 # 
-# sigma^2 estimated as 0.01622:  log likelihood = 1153.79,  aic = -2299.59
+# sigma^2 estimated as 0.01616:  log likelihood = 1157.48,  aic = -2306.96
 
-arima3 <- arima(Global.ts,order = c(3,1,1))
+arima3 <- arima(Global.ts,order = c(1,1,3))
 arima3
 # Call:
-#   arima(x = Global.ts, order = c(3, 1, 1))
+#   arima(x = Global.ts, order = c(1, 1, 3))
 # 
 # Coefficients:
-#   ar1     ar2     ar3      ma1
-# 0.4403  0.1260  0.0492  -0.9669
-# s.e.  0.0251  0.0262  0.0247   0.0085
+#   ar1      ma1     ma2     ma3
+# 0.8171  -1.3518  0.3087  0.0575
+# s.e.  0.0406   0.0490  0.0407  0.0326
 # 
-# sigma^2 estimated as 0.01619:  log likelihood = 1155.77,  aic = -2301.53
+# sigma^2 estimated as 0.01613:  log likelihood = 1158.94,  aic = -2307.88
+
+arima4 <- arima(Global.ts,order = c(1,1,4))
+arima4
+# Call:
+#   arima(x = Global.ts, order = c(1, 1, 4))
+# 
+# Coefficients:
+#   ar1      ma1     ma2     ma3     ma4
+# 0.8704  -1.4030  0.3478  0.0053  0.0600
+# s.e.  0.0335   0.0411  0.0438  0.0401  0.0273
+# 
+# sigma^2 estimated as 0.01609:  log likelihood = 1161.2,  aic = -2310.39
+
 ```
 
-#### 7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 3 tiene el menor AIC (-2301.53). En seguida, se realizará el ajuste del modelo:
+#### 7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 4 tiene el menor AIC (-2310.39). En seguida, se realizará el ajuste del modelo:
 ```r
-fit <- arima(Global.ts, order = c(3, 1, 1))
+fit <- arima(Global.ts, order = c(1, 1, 4))
 fit
 # Call:
-#   arima(x = Global.ts, order = c(3, 1, 1))
+#   arima(x = Global.ts, order = c(1, 1, 4))
 # 
 # Coefficients:
-#         ar1     ar2     ar3      ma1
-#       0.4403  0.1260  0.0492  -0.9669
-# s.e.  0.0251  0.0262  0.0247   0.0085
+#   ar1      ma1     ma2     ma3     ma4
+# 0.8704  -1.4030  0.3478  0.0053  0.0600
+# s.e.  0.0335   0.0411  0.0438  0.0401  0.0273
 # 
-# sigma^2 estimated as 0.01619:  log likelihood = 1155.77,  aic = -2301.53
+# sigma^2 estimated as 0.01609:  log likelihood = 1161.2,  aic = -2310.39
 ```
 
 #### La ecuación del modelo es la siguiente:
 ```
- Δx^_t = 0.4403*Δx_t-1 + 0.1260*Δx_t-2 + 0.0492*Δx_t-3 - 0.9669*u_t-1"
+ Δx^_t = 0.8704*Δx_t-1 - 1.4030*u_t-1 + 0.3478*u_t-2 + 0.0053*u_t-3  + 0.0600*u_t-4
 ```
 
 #### 8. Finalmente se realizarán los pronósticos para el año 2006 y su respectivo gráfico:
@@ -130,11 +143,11 @@ fit
 ```r
 pr <- predict(fit,12)$pred
 pr
-#          Jan       Feb       Mar       Apr       May       Jun       Jul
-# 2006 0.3928808 0.4068537 0.4148283 0.4244244 0.4303420 0.4345490 0.4376192
-#          Aug       Sep       Oct       Nov       Dec
-# 2006 0.4397923 0.4413430 0.4424507 0.4432407 0.4438044
-##
+# Jan       Feb       Mar       Apr       May       Jun       Jul       Aug       Sep
+# 2006 0.3944191 0.4109006 0.4241679 0.4249647 0.4256583 0.4262620 0.4267875 0.4272449 0.4276430
+# Oct       Nov       Dec
+# 2006 0.4279895 0.4282911 0.4285537
+
 ts.plot(cbind(window(Global.ts, start = 2000), pr), col = c("blue", "red"), xlab = "")
 title(main = "Pronósticos para el año 2006 de la serie de los datos de Global",
       xlab = "Mes",
