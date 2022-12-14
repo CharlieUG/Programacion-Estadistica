@@ -57,8 +57,8 @@ se repitió 3 veces."
 
 2) Con base al resultado anterior, ¿qué se puede concluir respecto al sesgo de `Mediciones`?
 
-**Con base en los resultados anteriores, se observó que la moda resultó menor que la mediana, y ésta a su
-**vez fue menor que la media (moda < mediana < media). Por tanto, se concluye que la distribución de los valores
+**Con base en los resultados anteriores, se observó que la moda resultó menor que la mediana, y ésta a su**
+**vez fue menor que la media (moda < mediana < media). Por tanto, se concluye que la distribución de los valores**
 **de las mediciones presenta una asimetría positiva o un sesgo hacia la derecha.**
 
 
