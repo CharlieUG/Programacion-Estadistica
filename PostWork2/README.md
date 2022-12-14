@@ -21,6 +21,7 @@ iris
 ```
 
 2) Crear una gráfica de puntos que contenga `Sepal.Lenght` en el eje horizontal, `Sepal.Width` en el eje vertical, que identifique `Species` por color y que el tamaño de la figura está representado por `Petal.Width`. Asegúrate de que la geometría contenga `shape = 10` y `alpha = 0.5`.
+
 ```R 
 plot(iris$Sepal.Length, iris$Sepal.Width, xlab="Lenght", ylab="Width") ##comparando el plot de rbase con el ggplot
 ```
@@ -28,6 +29,7 @@ plot(iris$Sepal.Length, iris$Sepal.Width, xlab="Lenght", ylab="Width") ##compara
 <p align="center">
   <img src="img/pw2img1.png" alt="Graph" width="480" height="357">
 </p>
+
 ```R 
 ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width,color=Species, size=Petal.Width))+geom_point(shape=10, alpha=.5)+xlab("Sepal Lenght") +ggtitle("Relacion SepalLenght/Width separado por especies") + ylab("Sepal Width")
 ```
@@ -37,6 +39,7 @@ ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width,color=Species, size=Petal.Width))
 </p>
 
 3) Crear una tabla llamada `iris_mean` que contenga el promedio de todas las variables agrupadas por `Species`.
+
 ```R 
 iris_mean<-iris%>%select(Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, Species)%>%group_by(Species)%>%
   summarize(promsl=mean(Sepal.Length),promSW= mean(Sepal.Width), mean(Petal.Width), mean(Petal.Length))
