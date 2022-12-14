@@ -79,9 +79,9 @@ pacf(diff(Global.ts))
   <img src="img/pw7img4.png" alt="Graph" width="480" height="357">
 </p>
 
-#### 6. De acuerdo con el gráfico de la función de autocorrelación puede estimarse que el modelo ARIMA a construir deberá contener 1 término autorregresivo. 
-#### Por otro lado, la gráfica de la función de autocorrelación parcial sugiere que el modelo ARIMA debe utilizar entre 1 y 4 rezagos para el proceso de media móvil. Finalmente, el modelo ARIMA que se construirá tendrá un orden de integración-diferenciación de uno.
-#### Por todo lo anterior, se construirán cuatro modelos ARIMA, y se seleccionará el mejor con base en el criterio del AIC: 
+>6. De acuerdo con el gráfico de la función de autocorrelación puede estimarse que el modelo ARIMA a construir deberá contener 1 término autorregresivo. 
+>Por otro lado, la gráfica de la función de autocorrelación parcial sugiere que el modelo ARIMA debe utilizar entre 1 y 4 rezagos para el proceso de media móvil. Finalmente, el modelo ARIMA que se construirá tendrá un orden de integración-diferenciación de uno.
+>Por todo lo anterior, se construirán cuatro modelos ARIMA, y se seleccionará el mejor con base en el criterio del AIC: 
 
 ```r
 arima1 <- arima(Global.ts,order = c(1,1,1))
@@ -134,7 +134,7 @@ arima4
 
 ```
 
-#### 7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 4 tiene el menor AIC (-2310.39). En seguida, se realizará el ajuste del modelo:
+>7. Con base en los resultados anteriores, puede concluirse que el modelo ARIMA 4 tiene el menor AIC (-2310.39). En seguida, se realizará el ajuste del modelo:
 ```r
 fit <- arima(Global.ts, order = c(1, 1, 4))
 fit
@@ -149,12 +149,12 @@ fit
 # sigma^2 estimated as 0.01609:  log likelihood = 1161.2,  aic = -2310.39
 ```
 
-#### La ecuación del modelo es la siguiente:
+>La ecuación del modelo es la siguiente:
 ```
  Δx^_t = 0.8704*Δx_t-1 - 1.4030*u_t-1 + 0.3478*u_t-2 + 0.0053*u_t-3  + 0.0600*u_t-4
 ```
 
-#### 8. Finalmente se realizarán los pronósticos para el año 2006 y su respectivo gráfico:
+>8. Finalmente se realizarán los pronósticos para el año 2006 y su respectivo gráfico:
 
 ```r
 pr <- predict(fit,12)$pred
