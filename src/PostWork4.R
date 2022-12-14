@@ -1,22 +1,10 @@
-# Postwork Sesión 4
+#POSTWORK SESION 4
+#Utilizando la variable total_intl_charge de la base de datos telecom_service.csv 
+#de la sesión 3, realiza un análisis probabilístico. Para ello, debes determinar
+#la función de distribución de probabilidad que más se acerque el comportamiento
+#de los datos. 
+#Hint: Puedes apoyarte de medidas descriptivas o técnicas de visualización.
 
-#### Objetivo
-
-- Realizar un análisis probabilístico del total de cargos internacionales de una compañía de telecomunicaciones
-
-#### Requisitos
-
-- R, RStudio
-- Haber trabajado con el prework y el work
-
-#### Desarrollo
-
-Utilizando la variable `total_intl_charge` de la base de datos `telecom_service.csv` de la sesión 3, realizar un análisis probabilístico. 
-
-- [telecom_service.csv](/telecom_service.csv)
-
-Para ello, se debe determinar la función de distribución de probabilidad que más se acerque el comportamiento de los datos.
-```r
 library(dplyr)
 library(DescTools)
 library(ggplot2)
@@ -44,12 +32,7 @@ median(df$total_intl_charge)
 #Histograma
 hist(df$total_intl_charge, prob=TRUE, xlab = "Total Intl Charge", ylab = "Density",
      main = "Histograma Total Intl Charge", col = "aquamarine3")
-```
-<p align="center">
-  <img src="img/pw4img1.png" alt="Graph" width="480" height="357">
-</p>
 
-```r
 #Observando el histograma, podemos ajustar la distribución normal a los datos.
 
 media <- mean(df$total_intl_charge)
@@ -58,66 +41,55 @@ std <- sd(df$total_intl_charge)
 std
 
 #La desviación estándar es de 0.7538.
-```
 
-Una vez seleccionado el modelo, realizar lo siguiente:
-
-1) Graficar la distribución teórica de la variable aleatoria `total_intl_charge`
-```r
+#1. Grafica la distribución teórica de la variable aleatoria total_intl_charge
 curve(dnorm(x, mean=media, sd=std), from=0, to=6,
   col= "aquamarine4", main ="Distribución teórica (normal)", ylab="f(x)",
   sub = expression(paste(mu==2.76, " y ", sigma==0.7538)))
-```
-<p align="center">
-  <img src="img/pw4img2.png" alt="Graph" width="480" height="357">
-</p>
 
-2) ¿Cuál es la probabilidad de que el total de cargos internacionales sea menor a 1.85 usd?
-```r
+#2. ¿Cuál es la probabilidad de que el total de cargos internacionales 
+#sea menor a 1.85 usd?
+
 pnorm(1.85,mean = media, sd=std, lower.tail = TRUE)
 
 #La probabilidad de que el total de cargos internacionales sea menor a 1.85 usd
 #es 11.25%.
-```
 
-3) ¿Cuál es la probabilidad de que el total de cargos internacionales sea mayor a 3 usd?
-```r
+#3. ¿Cuál es la probabilidad de que el total de cargos internacionales sea 
+#mayor a 3 usd?
+
 1-pnorm(3,mean=media, sd=std, lower.tail= TRUE)
 
 #La probabilidad de que el total de cargos internaciones sea mayor a 3 usd
 #es 37.74%.
-```
 
-4) ¿Cuál es la probabilidad de que el total de cargos internacionales esté entre 2.35usd y 4.85 usd?
-```r
+#4. ¿Cuál es la probabilidad de que el total de cargos internacionales esté 
+#entre 2.35usd y 4.85 usd?
+
 pnorm(4.85, mean=media,sd=std, lower.tail = TRUE)-pnorm(2.35, mean=media, 
       sd=std, lower.tail = TRUE)
 
 #La probabilidad de que el total de cargos internacionales esté entre 2.35 y 
 #4.85 usd es del 70.60%
 
-```
-
-5) Con una probabilidad de 0.48, ¿cuál es el total de cargos internacionales más alto que podría esperar?
-```r
+#5. Con una probabilidad de 0.48, ¿cuál es el total de cargos internacionales
+#más alto que podría esperar?
 
 qnorm(0.48, mean=media, sd=std)
 
 #El total de cargos internacionales más alto es de 2.73 usd con una
 #probabilidad del 48%.
-```
 
-6) ¿Cuáles son los valores del total de cargos internacionales que dejan exactamente al centro el 80% de probabilidad?
-```r
+#6. ¿Cuáles son los valores del total de cargos internacionales que dejan 
+#exactamente al centro el 80% de probabilidad?
+
 qnorm(0.1, mean=media, sd=std, lower.tail = TRUE); qnorm(0.9, mean=media, 
       sd=std, lower.tail = TRUE)
 
 #Entre los cargos de 1.7986 usd y 3.7306 usd se presenta un 80% de probabilidad
 #al centro de la distribución, es decir, entre esos dos valores se encuentra el 
 #80% de los datos.
-```
 
-```r
 #GRÁFICAS
 
 x <- seq(-4, 4, 0.01)*std + media
@@ -162,11 +134,3 @@ polygon(c(1.7986, x[x>=1.7986 & x<=3.7306], 3.7306),
         c(0, y[x>=1.7986 & x<=3.7306], 0), col="aquamarine4")
 
 dev.off()
-```
-<p align="center">
-  <img src="img/pw4img3.png" alt="Graph" width="480" height="357">
-</p>
-
- 
-#### Ir al archivo de código fuente
-- [PostWork 4](https://github.com/alsolisc/Postworks/tree/main/src/PostWork4.R)
