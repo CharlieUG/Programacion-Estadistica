@@ -131,8 +131,8 @@ df_clean %>%
 >Por otra parte, puede concluirse que es muy probable que los grupos dentro de las 
 >categorías estén generando el sesgo, en específico el grupo 0, pues los bigotes 
 >superiores de sus cajas correspondientes son más largos en comparación con
->los de las cajas del grupo 1, y también presentan mayor cantidad de datos 
->potencialmente atípicos.
+>los de las cajas del grupo 1, y también presentan mayor cantidad de datos potencialmente atípicos.
+
  
 #### Ir al archivo de código fuente
 - [PostWork 3](https://github.com/alsolisc/Postworks/tree/main/src/PostWork3.R)
