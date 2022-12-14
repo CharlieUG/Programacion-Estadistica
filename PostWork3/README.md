@@ -56,6 +56,7 @@ se repitió 3 veces."
 ```
 
 2) Con base al resultado anterior, ¿qué se puede concluir respecto al sesgo de `Mediciones`?
+
 "Con base en los resultados anteriores, se observó que la moda resultó menor que la mediana, y ésta a su
 vez fue menor que la media (moda < mediana < media). Por tanto, se concluye que la distribución de los valores
 de las mediciones presenta una asimetría positiva o un sesgo hacia la derecha".
@@ -78,6 +79,7 @@ quantile(df_clean$Mediciones,probs = c(0.25,0.50,0.75))
 
 "4) Con ggplot, realizar un histograma separando la distribución de `Mediciones` por `Categoría`
 ¿Se considera que sólo una categoría está generando el sesgo?"
+
 ```r
 library(tidyverse)
 k <- ceiling(sqrt(length(df_clean$Mediciones))) 
@@ -92,16 +94,22 @@ df_clean %>%
   ylab("Frecuencia absoluta")+
   theme_get()+
   facet_grid(~Categoria)
+```
+  
+<p align="center">
+  <img src="img/pw3img1.png" alt="Graph" width="480" height="357">
+</p>
 
 " Interpretación: con base en los histogramas de las mediciones separadas por categoría, se observa
 que la asimetría positiva se encuentra presente en las tres gráficas, por lo que puede concluirse
 que el sesgo lo están generando las tres categorías y no solo una de ellas."
 
-```
 
-5) Con ggplot, realizar un boxplot separando la distribución de `Mediciones` por `Categoría` 
-y por `Grupo` dentro de cada categoría. ¿Se considera que hay diferencias entre categorías? ¿Los grupos al interior de cada categoría 
+5) Con ggplot, realizar un boxplot separando la distribución de "Mediciones" por "Categoría" 
+y por `Grupo` dentro de cada categoría. 
+¿Se considera que hay diferencias entre categorías? ¿Los grupos al interior de cada categoría 
 podrían estar generando el sesgo?
+
 ```r
 df_clean %>% 
   ggplot()+
@@ -111,6 +119,10 @@ df_clean %>%
   labs(title = "Distribución de las mediciones por categoría y por grupo")+
   labs(x = "Categoría")+
   labs(y = "Mediciones")
+```
+<p align="center">
+  <img src="img/pw3img2.png" alt="Graph" width="480" height="357">
+</p>
 
 "Interpretación: Con base en la gráfica de caja y bigotes agrupada, se observan
 posibles diferencias entre las mediciones por categoría, siendo dichas
@@ -121,7 +133,6 @@ categorías estén generando el sesgo, en específico el grupo 0, pues los bigot
 superiores de sus cajas correspondientes son más largos en comparación con
 los de las cajas del grupo 1, y también presentan mayor cantidad de datos 
 potencialmente atípicos."
-```
  
 #### Ir al archivo de código fuente
 - [PostWork 3](https://github.com/alsolisc/Postworks/tree/main/src/PostWork3.R)
