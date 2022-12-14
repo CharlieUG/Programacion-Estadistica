@@ -57,9 +57,9 @@ se repitió 3 veces."
 
 2) Con base al resultado anterior, ¿qué se puede concluir respecto al sesgo de `Mediciones`?
 
-###Con base en los resultados anteriores, se observó que la moda resultó menor que la mediana, y ésta a su
-###vez fue menor que la media (moda < mediana < media). Por tanto, se concluye que la distribución de los valores
-###de las mediciones presenta una asimetría positiva o un sesgo hacia la derecha".
+**Con base en los resultados anteriores, se observó que la moda resultó menor que la mediana, y ésta a su
+**vez fue menor que la media (moda < mediana < media). Por tanto, se concluye que la distribución de los valores
+**de las mediciones presenta una asimetría positiva o un sesgo hacia la derecha.**
 
 
 3) Calcular e interpretar la desviación estándar y los cuartiles de la distribución de `Mediciones`
@@ -70,12 +70,12 @@ sd(df_clean$Mediciones)
 
 "Cuartiles"
 quantile(df_clean$Mediciones,probs = c(0.25,0.50,0.75))
-
-"Interpretación: 
-1) Primer cuartil: el 25% acumulado de los datos de mediciones se encuentran por debajo de 23.45.
-2) Segundo cuartil: el 50% acumulado de los datos de mediciones se encuentran por debajo de 49.30.
-3) Tercer cuartil: el 75% acumulado de los datos de mediciones se encuentran por debajo de 82.85."
 ```
+**Interpretación: 
+**1) Primer cuartil: el 25% acumulado de los datos de mediciones se encuentran por debajo de 23.45.
+**2) Segundo cuartil: el 50% acumulado de los datos de mediciones se encuentran por debajo de 49.30.
+**3) Tercer cuartil: el 75% acumulado de los datos de mediciones se encuentran por debajo de 82.85.
+
 
 "4) Con ggplot, realizar un histograma separando la distribución de `Mediciones` por `Categoría`
 ¿Se considera que sólo una categoría está generando el sesgo?"
@@ -100,9 +100,9 @@ df_clean %>%
   <img src="img/pw3img1.png" alt="Graph" width="480" height="357">
 </p>
 
-Interpretación: con base en los histogramas de las mediciones separadas por categoría, se observa
-que la asimetría positiva se encuentra presente en las tres gráficas, por lo que puede concluirse
-que el sesgo lo están generando las tres categorías y no solo una de ellas.
+**Interpretación: con base en los histogramas de las mediciones separadas por categoría, se observa
+**que la asimetría positiva se encuentra presente en las tres gráficas, por lo que puede concluirse
+**que el sesgo lo están generando las tres categorías y no solo una de ellas.**
 
 
 5) Con ggplot, realizar un boxplot separando la distribución de "Mediciones" por "Categoría" 
@@ -124,15 +124,15 @@ df_clean %>%
   <img src="img/pw3img2.png" alt="Graph" width="480" height="357">
 </p>
 
-Interpretación: Con base en la gráfica de caja y bigotes agrupada, se observan
-posibles diferencias entre las mediciones por categoría, siendo dichas
-mediciones menores para la categoría 1 en comparación con las categorías 2 y 3.
-Asimismo, pueden observa valores potencialmente atípicos para todas las categorías.
-Por otra parte, puede concluirse que es muy probable que los grupos dentro de las 
-categorías estén generando el sesgo, en específico el grupo 0, pues los bigotes 
-superiores de sus cajas correspondientes son más largos en comparación con
-los de las cajas del grupo 1, y también presentan mayor cantidad de datos 
-potencialmente atípicos.
+**Interpretación: Con base en la gráfica de caja y bigotes agrupada, se observan
+**posibles diferencias entre las mediciones por categoría, siendo dichas
+**mediciones menores para la categoría 1 en comparación con las categorías 2 y 3.
+**Asimismo, pueden observa valores potencialmente atípicos para todas las categorías.
+**Por otra parte, puede concluirse que es muy probable que los grupos dentro de las 
+**categorías estén generando el sesgo, en específico el grupo 0, pues los bigotes 
+**superiores de sus cajas correspondientes son más largos en comparación con
+**los de las cajas del grupo 1, y también presentan mayor cantidad de datos 
+**potencialmente atípicos.
  
 #### Ir al archivo de código fuente
 - [PostWork 3](https://github.com/alsolisc/Postworks/tree/main/src/PostWork3.R)
