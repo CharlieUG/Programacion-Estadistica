@@ -164,7 +164,7 @@ polygon(c(1.7986, x[x>=1.7986 & x<=3.7306], 3.7306),
 dev.off()
 ```
 <p align="center">
-  <img src="img/pw4img3.png" alt="Graph" width="480" height="357">
+  <img src="img/pw4img3.png" alt="Graph" width="628" height="434">
 </p>
 
  
