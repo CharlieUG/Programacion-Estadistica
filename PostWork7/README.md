@@ -38,6 +38,10 @@ plot(Global.ts,
      col = "blue")
 grid()
 ```
+<p align="center">
+  <img src="img/pw7img1.png" alt="Graph" width="480" height="357">
+</p>
+
 #### Con base en los resultados obtenidos, puede concluirse que la serie no es estacionaria debido a que ésta no muestra un comportamiento estable a lo largo del tiempo, es decir su media y varianza no son constantes en el tiempo
 
 3) Realizar una gráfica de la serie de tiempo anterior, transformando a la 
@@ -51,6 +55,9 @@ title(main = "Serie Diferenciada de los datos de Global",
       )
 grid()
 ```
+<p align="center">
+  <img src="img/pw7img2.png" alt="Graph" width="480" height="357">
+</p>
 
 4) ¿Consideras que la serie es estacionaria en niveles o en primera diferencia?
 
@@ -60,8 +67,17 @@ grid()
 
 ```r
 acf(diff(Global.ts))
+```
+<p align="center">
+  <img src="img/pw7img3.png" alt="Graph" width="480" height="357">
+</p>
+
+```r
 pacf(diff(Global.ts))
 ```
+<p align="center">
+  <img src="img/pw7img4.png" alt="Graph" width="480" height="357">
+</p>
 
 #### 6. De acuerdo con el gráfico de la función de autocorrelación puede estimarse que el modelo ARIMA a construir deberá contener 1 término autorregresivo. 
 #### Por otro lado, la gráfica de la función de autocorrelación parcial sugiere que el modelo ARIMA debe utilizar entre 1 y 4 rezagos para el proceso de media móvil. Finalmente, el modelo ARIMA que se construirá tendrá un orden de integración-diferenciación de uno.
@@ -153,6 +169,9 @@ title(main = "Pronósticos para el año 2006 de la serie de los datos de Global"
       xlab = "Mes",
       ylab = "Mediciones de Global")
 ```
+<p align="center">
+  <img src="img/pw7img5.png" alt="Graph" width="480" height="357">
+</p>
 
 #### Ir al archivo de código fuente
 - [PostWork 7](https://github.com/alsolisc/Postworks/tree/main/src/PostWork7.R)
