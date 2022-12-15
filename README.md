@@ -32,14 +32,14 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 [PostWork 1-8 Equipo 3](https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 <p align="center">
- <a href="https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">
+ <a href="https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
   <img src="img/Equipo3PresentacionPW.png" alt="Logo" width="480" height="270">
 </a>   
 </p>
 
 
 ## Acerca de los colaboradores ℹ️
-- [Alfredo Castillo](https://github.com/alsolisc){:target="_blank" rel="noopener"}
+- [Alfredo Castillo](https://github.com/alsolisc)
 - [Angélica Martínez](https://github.com/AngelicaMarMo)
 - [José Carlos Velázquez](https://github.com/CharlieUG)
 - [Nestor Gaspar](https://github.com/nex3t)
