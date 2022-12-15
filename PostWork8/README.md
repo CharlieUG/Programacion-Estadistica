@@ -40,9 +40,9 @@
 
 "Como paso previo, se realizará la importación de la base de datos:"
 
-```
+
 - [inseguridad_alimentaria_bedu.csv](/inseguridad_alimentaria_bedu.csv)
-```
+
 
 ```r
 df<-read.csv("https://raw.githubusercontent.com/beduExpert/Programacion-R-Santander-2022/main/Sesion-08/Postwork/inseguridad_alimentaria_bedu.csv")
