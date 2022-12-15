@@ -42,8 +42,7 @@ summary(iris)
 iris$Species <- factor(iris$Species)
 ```
 
-#### 1. HIPÓTESIS: En promedio, el largo del sépalo de la especie Setosa es 
-#### de 5.7 cm.
+#### 1. HIPÓTESIS: En promedio, el largo del sépalo de la especie Setosa es de 5.7 cm.
 #### Ho: Promedio setosa Sepal.Lenght=5.7
 #### Ha: Promedio setosa Sepal.Lenght!=5.7
 
@@ -65,10 +64,9 @@ t.test(iris[iris$Species=="setosa", "Sepal.Length"], alternative="two.sided",
 #Dado que pvalue<NS EEE para rechazar la hipótesis nula.
 ```
 
-####2. HIPÓTESIS: En promedio, el ancho del pétalo de la especie virginica es 
-#### menor a 2.1 cm.
-####Ho:Promedio virginica Petal.With>=2.1
-####Ha=Promedio virginica Petal.With<2.1
+#### 2. HIPÓTESIS: En promedio, el ancho del pétalo de la especie virginica es menor a 2.1 cm.
+#### Ho:Promedio virginica Petal.With>=2.1
+#### Ha=Promedio virginica Petal.With<2.1
 
 ```R
 t.test(iris[iris$Species=="virginica", "Petal.Width"], alternative="less", 
@@ -89,8 +87,7 @@ t.test(iris[iris$Species=="virginica", "Petal.Width"], alternative="less",
 ```
 
 #### 3. HIPÓTESIS: En promedio, el largo del pétalo de la especie virginica 
-#### es 1.1 cm más grande que el promedio del largo del pétalo de la especie 
-#### versicolor.
+#### es 1.1 cm más grande que el promedio del largo del pétalo de la especie versicolor.
 
 ```R
 mean.virg <- mean(iris[iris$Species=="virginica", "Petal.Length"])
@@ -135,9 +132,7 @@ t.test(x = iris[iris$Species=="virginica", "Petal.Length"], y = iris[iris$Specie
 #Dado que p>NS no EEE para rechazar la Ho.
 ```
 
-#### 4. HIPÓTESIS: En promedio, no existe diferencia en el ancho del sépalo entre las 3 
-#### especies.
-
+#### 4. HIPÓTESIS: En promedio, no existe diferencia en el ancho del sépalo entre las 3 especies.
 #### Análisis de varianza pues tenemos más de dos muestras.
 #### Ho: no hay diferencias entre las medias de Sepal.Width
 #### Ha: hay diferencias entre las medias de Sepal.Width
