@@ -2,8 +2,10 @@
   <img src="img/logo.png" alt="Logo" width="200" height="200">
 </p>
 <p align="center">  
-
- <h2 align="center"><strong>Postworks del modulo "Programación y estadística con R Santander 2022" </h2>
+ 
+<h2 align="center"><strong>Becas Santander Universidades</h2>
+<h2 align="center"><strong>Data Science para profesionistas | BEDU</h2>
+<h3 align="center"><strong>Postworks del módulo "Programación y estadística con R Santander 2022" </h2>
 
 # EQUIPO 3
 
