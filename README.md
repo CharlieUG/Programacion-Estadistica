@@ -38,7 +38,7 @@ table, tr, td{
  border:none;
 }
 
-<table style="border:none">
+<table border=0>
     <tr style="border:none">
     <td style="border:none">
 	<img src="img/Alfredo.jpg" alt="Logo" width="242" height="229"> 
