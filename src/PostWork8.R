@@ -162,7 +162,6 @@ los hogares con IA pertenecían al nivel alto.
 
 En seguida, se construirá el gráfico de de barras de la seguridad alimentaria 
 de acuerdo con la zona geográfica donde están localizados los hogares:"
-
 df_clean %>% 
   ggplot(aes(x = area, group = IA_factor)) + 
   geom_bar(aes(y = ..prop.., fill = factor(..x..)), stat = "count") +
@@ -1120,8 +1119,8 @@ socioeconómico bajo."
 "Para nse5f5, la razón de momios fue de 0.2277, lo que significa que el momio de presentar IA
 es menor para los hogares de nivel socioeconómico alto que para los hogares de nivel
 socioeconómico bajo."
-"Para area1, la razón de momios fue de 1.1914, lo que significa que el momio de presentar IA
-para los hogares de la zona rural es 1.1914 veces el momio para los hogares de la zona urbana."
+"Para area1, la razón de momios fue de 0.9156, lo que significa que el momio de presentar IA
+es menor para los hogares de la zona rural que para los hogares de la zona urbana."
 "Para numpeho, la razón de momios es de 1.1914, lo que significa que la probabilidad de que un
 hogar presente inseguridad alimentaria aumenta, a medida que el número de personas por hogar
 aumenta."
@@ -1140,6 +1139,7 @@ aumentan."
 "Para ln_alns, la razón de momios es de 0.9057, lo que significa que la probabilidad de que un
 hogar presente inseguridad alimentaria disminuye, a medida que los gastos en alimentos no saludables
 aumentan."
+
 
 "De forma adicional, se construirá un modelo de regresión lineal simple para determinar si
 el nivel socioeconómico, el grado de escolaridad del jefe de familia, el número de personas
@@ -1219,8 +1219,8 @@ de la probabilidad de presentar IA conforme el nivel socioeconómico se incremen
 en relación con el nivel socioeconómico bajo. Asimismo, la probabilidad antes mencionada
 es menor a medida que los años de educación del jefe de familia, los gastos en 
 alimentos saludables y los gastos en alimentos no saludables se incrementan. En este
-mismo tenor, la probabilidad de presentar IA aumenta para los hogares que pertenencen
-a la zona rural en comparación con los de la zona urbana, para los hogares que
+mismo tenor, la probabilidad de presentar IA disminuye para los hogares que pertenencen
+a la zona rural en comparación con los de la zona urbana, y aumenta para los hogares que
 presentan ingresos adicionales en comparación con los que no los presentan, para 
 los hogares cuyo jefe de familia es mujer en comparación con los que cuyo jefe 
 de hogar es hombre y cuando el número de personas por hogar aumenta. Por tal motivo,
@@ -1233,4 +1233,3 @@ Esto aporta evidencia para rechazar la hipótesis de investigación de que los
 hogares con menor nivel socioeconómico tienen a gastar más en productos no saludables
 y que esto conduce a la IA; antes bien, los hogares con mayor nivel socioeconómico
 gastan más en productos no saludables, y por tanto es menos probable que presenten IA."
-
