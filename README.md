@@ -39,7 +39,7 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 
 ## Acerca de los colaboradores ℹ️
-- [Alfredo Castillo](https://github.com/alsolisc)
+- [Alfredo Castillo](https://github.com/alsolisc){:target="_blank" rel="noopener"}
 - [Angélica Martínez](https://github.com/AngelicaMarMo)
 - [José Carlos Velázquez](https://github.com/CharlieUG)
 - [Nestor Gaspar](https://github.com/nex3t)
