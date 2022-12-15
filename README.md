@@ -34,27 +34,30 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [José Carlos Velázquez](https://github.com/CharlieUG)
 - [Nestor Gaspar](https://github.com/nex3t)
 - [Juan Dzul]
+table, tr, td{
+ border:none;
+}
 
-<table style="border: hidden">
-    <tr style="border: hidden">
-    <td style="border: hidden">
+<table style="border:none">
+    <tr style="border:none">
+    <td style="border:none">
 	<img src="img/Alfredo.jpg" alt="Logo" width="242" height="229"> 
 	</td>
-	<td style="border: hidden">
+	<td style="border:none">
 	<img src="img/Angelica.jpg" alt="Logo" width="223" height="211"> 
 	</td>
-	<td style="border: hidden">
+	<td style="border: none">
 	<img src="img/JoseCarlos.jpg" alt="Logo" width="235" height="233">
 	</td>
 	</tr>
-	<tr style="border: hidden">
-	<td style="border: hidden">
+	<tr style="border: none">
+	<td style="border: none">
 	<img src="img/Nestor.jpg" alt="Logo" width="174" height="236">
 	</td>
-	<td style="border: hidden">
+	<td style="border: none">
 	<img src="img/Juan.jpg" alt="Logo" width="232" height="233"> 
 	</td>
-	<td style="border: hidden">
+	<td style="border: none">
 	</td>
 	<tr>
 </table>
