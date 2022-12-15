@@ -35,6 +35,8 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [Nestor Gaspar](https://github.com/nex3t)
 - [Juan Dzul]
 <p align="center">
-| <img src="img/logo.png" alt="Logo" width="200" height="200"> | <img src="img/logo.png" alt="Logo" width="200" height="200"> | <img src="img/logo.png" alt="Logo" width="200" height="200>|
+| <img src="img/logo.png" alt="Logo" width="200" height="200"> | <img src="img/logo.png" alt="Logo" width="200" height="200"> | <img src="img/logo.png" alt="Logo" width="200" height="200> |
 </p>
-
+|   |   |   |
+|---|---|---|
+|   |   |   |
