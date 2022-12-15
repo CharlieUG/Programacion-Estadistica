@@ -41,7 +41,7 @@
 "Como paso previo, se realizará la importación de la base de datos:"
 
 
-- [inseguridad_alimentaria_bedu.csv](/inseguridad_alimentaria_bedu.csv)
+- [inseguridad_alimentaria_bedu.csv](inseguridad_alimentaria_bedu.csv)
 
 
 ```r
