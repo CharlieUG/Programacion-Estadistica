@@ -1,6 +1,2 @@
-markdown: kramdown
-plugins:
-  - jekyll-relative-links
-  - jemoji
-relative_links:
-  enabled: true
+kramdown:
+  input: Kramdown
