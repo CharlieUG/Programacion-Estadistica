@@ -36,8 +36,6 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [Juan Dzul]
 
 <table style="border: hidden">
-    <tbody style="border: hidden">
-
     <tr style="border: hidden">
     <td style="border: hidden">
 	<img src="img/Alfredo.jpg" alt="Logo" width="242" height="229"> 
