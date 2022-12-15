@@ -37,4 +37,4 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 |   |   |   |
 |---|---|---|
-| <img src="img/logo.png" alt="Logo" width="200" height="200">   | <img src="img/logo.png" alt="Logo" width="200" height="200">   |  <img src="img/logo.png" alt="Logo" width="200" height="200">  |
+| <img src="img/Alfredo.png" alt="Logo" width="242" height="229">   | <img src="img/Angelica.png" alt="Logo" width="223" height="211">   |  <img src="img/JoseCarlos.png" alt="Logo" width="235" height="233">  |
