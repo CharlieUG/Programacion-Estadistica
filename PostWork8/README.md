@@ -2,42 +2,42 @@
 
 #### Objetivo
 
-# 1. Realizar un análisis estadístico completo de un caso
-# 2. Publicar en un repositorio de Github el análisis y el código empleado
+### 1. Realizar un análisis estadístico completo de un caso
+### 2. Publicar en un repositorio de Github el análisis y el código empleado
 
 #### Requisitos
 
-# 1. Haber realizado los works y postworks previos
-# 2. Tener una cuenta en Github o en RStudioCloud
+### 1. Haber realizado los works y postworks previos
+### 2. Tener una cuenta en Github o en RStudioCloud
 
-# #### Desarrollo
+#### Desarrollo
 
-# Un centro de salud nutricional está interesado en analizar estadísticamente y 
-# probabilísticamente los patrones de gasto en alimentos saludables y no saludables
-# en los hogares mexicanos con base en su nivel socioeconómico, en si el hogar
-# tiene recursos financieros extras al ingreso y en si presenta o no inseguridad
-# alimentaria. Además, está interesado en un modelo que le permita identificar 
-# los determinantes socioeconómicos de la inseguridad alimentaria.
+### Un centro de salud nutricional está interesado en analizar estadísticamente y 
+### probabilísticamente los patrones de gasto en alimentos saludables y no saludables
+### en los hogares mexicanos con base en su nivel socioeconómico, en si el hogar
+### tiene recursos financieros extras al ingreso y en si presenta o no inseguridad
+### alimentaria. Además, está interesado en un modelo que le permita identificar 
+### los determinantes socioeconómicos de la inseguridad alimentaria.
 
-# La base de datos es un extracto de la Encuesta Nacional de Salud y Nutrición (2012)
-# levantada por el Instituto Nacional de Salud Pública en México. La mayoría de las 
-# personas afirman que los hogares con menor nivel socioeconómico tienden a gastar 
-# más en productos no saludables que las personas con mayores niveles socioeconómicos
-# y que esto, entre otros determinantes, lleva a que un hogar presente cierta 
-# inseguridad alimentaria.
+### La base de datos es un extracto de la Encuesta Nacional de Salud y Nutrición (2012)
+### levantada por el Instituto Nacional de Salud Pública en México. La mayoría de las 
+### personas afirman que los hogares con menor nivel socioeconómico tienden a gastar 
+### más en productos no saludables que las personas con mayores niveles socioeconómicos
+### y que esto, entre otros determinantes, lleva a que un hogar presente cierta 
+### inseguridad alimentaria.
 
-# La base de datos contiene las siguientes variables:
+### La base de datos contiene las siguientes variables:
    
-# nse5f (Nivel socioeconómico del hogar): 1 "Bajo", 2 "Medio bajo", 3 "Medio", 4 "Medio alto", 5 "Alto"
-# area (Zona geográfica): 0 "Zona urbana", 1 "Zona rural"
-# numpeho (Número de persona en el hogar)
-# refin (Recursos financieros distintos al ingreso laboral): 0 "no", 1 "sí"
-# edadjef (Edad del jefe/a de familia)
-# sexoje (Sexo del jefe/a de familia): 0 "Hombre", 1 "Mujer"
-# añosedu (Años de educación del jefe de familia)
-# ln_als (Logaritmo natural del gasto en alimentos saludables)
-# ln_alns (Logaritmo natural del gasto en alimentos no saludables)
-# IA (Inseguridad alimentaria en el hogar): 0 "No presenta IA", 1 "Presenta IA"
+### nse5f (Nivel socioeconómico del hogar): 1 "Bajo", 2 "Medio bajo", 3 "Medio", 4 "Medio alto", 5 "Alto"
+### area (Zona geográfica): 0 "Zona urbana", 1 "Zona rural"
+### numpeho (Número de persona en el hogar)
+### refin (Recursos financieros distintos al ingreso laboral): 0 "no", 1 "sí"
+### edadjef (Edad del jefe/a de familia)
+### sexoje (Sexo del jefe/a de familia): 0 "Hombre", 1 "Mujer"
+### añosedu (Años de educación del jefe de familia)
+### ln_als (Logaritmo natural del gasto en alimentos saludables)
+### ln_alns (Logaritmo natural del gasto en alimentos no saludables)
+### IA (Inseguridad alimentaria en el hogar): 0 "No presenta IA", 1 "Presenta IA"
 
 "Como paso previo, se realizará la importación de la base de datos:"
 
@@ -84,7 +84,7 @@ str(df_clean)
 "Finalmente, se procederá a dar respuesta a las preguntas planteadas:"
 
 
-# 1. Plantea el problema del caso -----------------------------------------
+# 1. Plantea el problema del caso
 
 "El objetivo de esta investigación consiste en determinar si algunos aspectos sociodemográficos
 de los hogares mexicanos como su nivel socioeconómico, si reciben o no recursos
@@ -103,7 +103,7 @@ mexicanos."
 
 
 
-# 2. Realiza un análisis descriptivo de la información --------------------
+# 2. Realiza un análisis descriptivo de la información
 
 ```r
 install.packages("tidyverse")
@@ -895,7 +895,7 @@ correlaciona débil y negativamente con el número de personas por hogar y la ed
 del jefe de familia."
 
 
-# 3. Calcula probabilidades que nos permitan entender el problema en México --------
+# 3. Calcula probabilidades que nos permitan entender el problema en México
 
 "Para responder esta pregunta, primero se elaborarán tablas de frecuencias relativas
 para estimar la probabilidad marginal de que los hogares de la encuesta pertenezcan a
@@ -975,7 +975,7 @@ de hogares encuestados que presentan IA que de hogares que no presentan este pro
 "Para finalizar, se calculará la probabilidad (conjunta) de que el hogar encuestado
 pertenezca a x nivel socioeconómico y el hogar encuestado presente o no IA:"
 
-# Tabla de probabilidades conjuntas
+## Tabla de probabilidades conjuntas
 
 ```R
 conjunta_nivel_IA <-
@@ -993,7 +993,7 @@ tabla.df <- melt(tabla.matriz)
 tabla.df <- tabla.df %>% dplyr::rename("Probabilidad conjunta" = value)
 ```
 
-# A continuación, se elaborará un heatmap
+## A continuación, se elaborará un heatmap
 
 ```R
 tabla.df %>% 
@@ -1265,7 +1265,7 @@ polygon(c(q5, w[w>q5 & w<q6], q6), c(0, z[w>q5 & w<q6], 0), col="aquamarine3")
 >90%, una familia gasta entre $11.09 y $341.0 en alimentos no saludables."
 
 
-# 4. Plantea hipótesis estadísticas y concluye sobre ellas para entender el problema en México --------
+# 4. Plantea hipótesis estadísticas y concluye sobre ellas para entender el problema en México
 
 "En primer lugar, se realizará un conjunto de pruebas de hipótesis para la media para
 los gastos en alimentos saludables y no saludables:"
@@ -1484,7 +1484,7 @@ laborales."
 
 
 
-# 5.  Estima un modelo de regresión, lineal o logístico, para identificar los determinantes de la inseguridad alimentaria en México --------
+# 5.  Estima un modelo de regresión, lineal o logístico, para identificar los determinantes de la inseguridad alimentaria en México
 
 "Debido a que lo que se pretende identificar son las variables que tienen un efecto
 sobre la inseguridad alimentaria en México, se construirá un modelo de regresión logística
@@ -1751,7 +1751,7 @@ hogares en alimentos no saludables (con un nivel de significancia del 5%)."
 
 # 6. Escribe tu análisis en un archivo README.MD y tu código en un script de R y publica ambos en un repositorio de Github.
 
-"CONCLUSIONES FINALES:"
+## CONCLUSIONES FINALES:
 
 "Respecto del análisis descriptivo, los hallazgos indican que la proporción
 de hogares encuestados que presentaron inseguridad alimentaria (IA) es mayor que
@@ -1824,3 +1824,6 @@ Esto aporta evidencia para rechazar la hipótesis de investigación de que los
 hogares con menor nivel socioeconómico tienen a gastar más en productos no saludables
 y que esto conduce a la IA; antes bien, los hogares con mayor nivel socioeconómico
 gastan más en productos no saludables, y por tanto es menos probable que presenten IA."
+
+#### Ir al archivo de código fuente
+- [PostWork 8](https://github.com/alsolisc/Postworks/tree/main/src/PostWork8.R)
