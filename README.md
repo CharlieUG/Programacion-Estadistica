@@ -1,3 +1,15 @@
+<style>
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid black;
+}
+blockquote {
+    border-left: solid blue;
+    padding-left: 10px;
+}
+</style>
 <p align="center">
   <img src="img/logo.png" alt="Logo" width="200" height="200">
 </p>
@@ -35,18 +47,7 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [Nestor Gaspar](https://github.com/nex3t)
 - [Juan Dzul]
 
-<style>
-table {
-    border-collapse: collapse;
-}
-table, th, td {
-   border: 1px solid black;
-}
-blockquote {
-    border-left: solid blue;
-    padding-left: 10px;
-}
-</style>
+
 
 <table border=0>
     <tr style="border:none">
