@@ -27,6 +27,9 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [PostWork 7](/PostWork7)
 - [PostWork 8](/PostWork8)
 
+## Ver presentación
+[PostWork 1-8 Equipo 3](https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+
 
 ## Acerca de los colaboradores ℹ️
 - [Alfredo Castillo](https://github.com/alsolisc)
@@ -34,7 +37,6 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [José Carlos Velázquez](https://github.com/CharlieUG)
 - [Nestor Gaspar](https://github.com/nex3t)
 - [Juan Dzul]
-
 
 <p align="center">
 <img src="img/Alfredo.jpg" alt="Logo" width="223" height="211">&nbsp&nbsp&nbsp&nbsp<img src="img/Angelica.jpg" alt="Logo" width="223" height="211">&nbsp&nbsp&nbsp&nbsp 
