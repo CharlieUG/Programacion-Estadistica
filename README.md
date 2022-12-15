@@ -1,15 +1,3 @@
-<style>
-table {
-    border-collapse: collapse;
-}
-table, th, td {
-   border: 1px solid black;
-}
-blockquote {
-    border-left: solid blue;
-    padding-left: 10px;
-}
-</style>
 <p align="center">
   <img src="img/logo.png" alt="Logo" width="200" height="200">
 </p>
@@ -49,29 +37,14 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 
 
-<table border=0>
-    <tr style="border:none">
-    <td style="border:none">
-	<img src="img/Alfredo.jpg" alt="Logo" width="242" height="229"> 
-	</td>
-	<td style="border:none">
-	<img src="img/Angelica.jpg" alt="Logo" width="223" height="211"> 
-	</td>
-	<td style="border: none">
-	<img src="img/JoseCarlos.jpg" alt="Logo" width="235" height="233">
-	</td>
-	</tr>
-	<tr style="border: none">
-	<td style="border: none">
-	<img src="img/Nestor.jpg" alt="Logo" width="174" height="236">
-	</td>
-	<td style="border: none">
-	<img src="img/Juan.jpg" alt="Logo" width="232" height="233"> 
-	</td>
-	<td style="border: none">
-	</td>
-	<tr>
-</table>
+<img src="img/Alfredo.jpg" alt="Logo" width="242" height="229"><img src="img/Angelica.jpg" alt="Logo" width="223" height="211"> 
+<img src="img/JoseCarlos.jpg" alt="Logo" width="235" height="233">
+<p>
+<img src="img/Nestor.jpg" alt="Logo" width="174" height="236">
+<img src="img/Juan.jpg" alt="Logo" width="232" height="233"> 
+</p>
+
+
 
 |   |   |   |
 |---|---|---|
