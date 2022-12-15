@@ -120,7 +120,7 @@ ventas aumentan en promedio 0.0423, siempre y cuando la inversión en TV no camb
 un incremento promedio de 0.0436 + 0.0004*Radio en las ventas, y que un incremento unitario 
 en Radio se asocia con un incremento promedio de 0.0423 + 0.0004*TV en las ventas"
 
-"4. Validación de supuestos"
+"5. Validación de supuestos"
 
 library(ggfortify)
 autoplot(modelo3)
