@@ -5,12 +5,12 @@
 - Desarrollar un modelo que permita realizar predicciones de una variable cuantitativa
  con base en variables predictoras.
 
-####Requisitos
+#### Requisitos
 
 1. Tener instalado R y RStudio
 2. Haber trabajado con el Prework y el Work
 
-####Desarrollo
+#### Desarrollo
 
 Supongamos que nuestro trabajo consiste en aconsejar a un cliente sobre 
 como mejorar las ventas de un producto particular, y el conjunto de datos 
@@ -49,7 +49,7 @@ str(adv)
 ```
 - [advertising.csv](/advertising.csv)
 
-####2. Construir el modelo de regresión lineal múltiple completo
+#### 2. Construir el modelo de regresión lineal múltiple completo
 ```R
 modelo1 <- lm(Sales~., data = adv)
 summary(modelo1)
