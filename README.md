@@ -34,9 +34,19 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [José Carlos Velázquez](https://github.com/CharlieUG)
 - [Nestor Gaspar](https://github.com/nex3t)
 - [Juan Dzul]
-table, tr, td{
- border:none;
+
+<style>
+table {
+    border-collapse: collapse;
 }
+table, th, td {
+   border: 1px solid black;
+}
+blockquote {
+    border-left: solid blue;
+    padding-left: 10px;
+}
+</style>
 
 <table border=0>
     <tr style="border:none">
