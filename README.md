@@ -29,6 +29,7 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [Archivos fuente .R](/src)
 
 ## Ver video 
+[![Clic para ver el video]]
 
 <p align="center">
  <a href="https://www.youtube.com/watch?v=y23KqngJ5Qk">
