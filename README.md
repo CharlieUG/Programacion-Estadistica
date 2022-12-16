@@ -30,12 +30,7 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 ## Ver video 
 
-<object width="425" height="350">
-<param name="movie" value="https://www.youtube.com/embed/y23KqngJ5Qk"></param>
-<param name="wmode" value="transparent"></param>
-<embed src="https://www.youtube.com/embed/y23KqngJ5Qk" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350">
-</embed>
-</object>
+[![Clic para ver el video](img/videoeq3.gif)](https://www.youtube.com/watch?v=y23KqngJ5Qk)
 
 ## Ver presentación
  
