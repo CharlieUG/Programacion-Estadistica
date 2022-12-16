@@ -29,9 +29,12 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [Archivos fuente .R](/src)
 
 ## Ver video 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y23KqngJ5Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<object width="425" height="350">
+<param name="movie" value="https://www.youtube.com/embed/y23KqngJ5Qk"></param>
+<param name="wmode" value="transparent"></param>
+<embed src="https://www.youtube.com/embed/y23KqngJ5Qk" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350">
+</embed>
+</object>
 
 ## Ver presentación
  
