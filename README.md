@@ -29,9 +29,9 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [Archivos fuente .R](/src)
 
 ## Ver video 
-
+<p align="center">
 [![Clic para ver el video](img/videoeq3.gif)](https://www.youtube.com/watch?v=y23KqngJ5Qk)
-
+</p>
 ## Ver presentación
  
 [PostWork 1-8 Equipo 3](https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
