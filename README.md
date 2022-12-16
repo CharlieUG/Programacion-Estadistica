@@ -30,7 +30,7 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 ## Ver video 
 
-[![Clic para ver el video](img/videoeq3.gif width="480" height="270")](https://www.youtube.com/watch?v=y23KqngJ5Qk)
+[![Clic para ver el video](img/videoeq3.gif)](https://www.youtube.com/watch?v=y23KqngJ5Qk)
 
 ## Ver presentación
  
