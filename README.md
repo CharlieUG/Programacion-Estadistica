@@ -29,16 +29,13 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [Archivos fuente .R](/src)
 
 ## Ver video 
-[![Clic para ver el video]]
+[Clic para ver el video]
 
 <p align="center">
  <a href="https://www.youtube.com/watch?v=y23KqngJ5Qk">
   <img src="img/videoeq3.gif" alt="Clic para ver el video" width="480" height="270">
 </a>   
 </p>
-
-[![Clic para ver el video](img/videoeq3.gif)](https://www.youtube.com/watch?v=y23KqngJ5Qk)
-
 
 ## Ver presentación
  
