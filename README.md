@@ -28,6 +28,11 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 - [PostWork 8](/PostWork8)
 - [Archivos fuente .R](/src)
 
+## Ver video 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y23KqngJ5Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Ver presentación
  
 [PostWork 1-8 Equipo 3](https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
