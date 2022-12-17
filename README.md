@@ -49,11 +49,12 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 
 ## Acerca de los colaboradores ℹ️
-- [Alfredo Castillo](https://github.com/alsolisc)
-- [Angélica Martínez](https://github.com/AngelicaMarMo)
-- [José Carlos Velázquez](https://github.com/CharlieUG)
-- [Nestor Gaspar](https://github.com/nex3t)
-- [Juan Dzul](https://github.com/jpanti)
+- [Alfredo Castillo](https://github.com/alsolisc)(alfredo.castillo@uptapachula.edu.mx)
+- [Angélica Martínez](https://github.com/AngelicaMarMo)(icamtzm@gmail.com)
+- [José Carlos Velázquez](https://github.com/CharlieUG)(velazquezlunajc@gmail.com)
+- [Nestor Gaspar](https://github.com/nex3t)(nex3t@hotmail.com)
+- [Juan Dzul](https://github.com/jpanti)(el_panti@hotmail.com)
+
 
 <p align="center">
 <img src="img/Alfredo.jpg" alt="Logo" width="223" height="211">&nbsp&nbsp&nbsp&nbsp<img src="img/Angelica.jpg" alt="Logo" width="223" height="211">&nbsp&nbsp&nbsp&nbsp 
