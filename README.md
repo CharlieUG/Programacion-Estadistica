@@ -7,8 +7,6 @@
 <h2 align="center"><strong>Data Science para profesionistas | BEDU</h2>
 <h3 align="center"><strong>Postworks del módulo "Programación y estadística con R Santander 2022" </h2>
 
-# EQUIPO 3
-
 ## Acerca del proyecto ⚠️
 Este repositorio fue creado para almacenar y presentar los `postworks` del modulo _"Programación y estadística con R Santander 2022"_ de la beca _"Becas Santander Tecnología | Data Science para profesionistas | BEDU"_.
 ***
@@ -39,28 +37,10 @@ Este repositorio fue creado para almacenar y presentar los `postworks` del modul
 
 ## Ver presentación
  
-[PostWork 1-8 Equipo 3](https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[PostWorks 1-8](https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 <p align="center">
  <a href="https://www.canva.com/design/DAFUsnCQp1M/hRHsCG2hrX7JwE3u9pf5RA/view?utm_content=DAFUsnCQp1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
   <img src="img/Equipo3PresentacionPW.png" alt="Logo" width="480" height="270">
 </a>   
-</p>
-
-
-## Acerca de los colaboradores ℹ️
-- [Alfredo Castillo](https://github.com/alsolisc)   - alfredo.castillo@uptapachula.edu.mx
-- [Angélica Martínez](https://github.com/AngelicaMarMo)   - icamtzm@gmail.com
-- [José Carlos Velázquez Luna](https://github.com/CharlieUG)   - velazquezlunajc@gmail.com
-- [Nestor Gaspar](https://github.com/nex3t)   - nex3t@hotmail.com
-- [Juan Dzul](https://github.com/jpanti)   - el_panti@hotmail.com
-
-
-<p align="center">
-<img src="img/Alfredo.jpg" alt="Logo" width="223" height="211">&nbsp&nbsp&nbsp&nbsp<img src="img/Angelica.jpg" alt="Logo" width="223" height="211">&nbsp&nbsp&nbsp&nbsp 
-<img src="img/JoseCarlos.jpg" alt="Logo" width="213" height="211">
-</p>
-<p align="center">
-<img src="img/Nestor.jpg" alt="Logo" width="156" height="211">&nbsp&nbsp&nbsp&nbsp
-<img src="img/Juan.jpg" alt="Logo" width="210" height="211"> 
 </p>
